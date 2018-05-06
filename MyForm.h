@@ -1834,7 +1834,7 @@ private: System::Windows::Forms::Button^  ResetB;
 			// ALeft
 			// 
 			this->ALeft->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"ALeft.BackgroundImage")));
-			this->ALeft->Location = System::Drawing::Point(140, 786);
+			this->ALeft->Location = System::Drawing::Point(151, 786);
 			this->ALeft->Name = L"ALeft";
 			this->ALeft->Size = System::Drawing::Size(60, 60);
 			this->ALeft->TabIndex = 12;
@@ -1844,7 +1844,7 @@ private: System::Windows::Forms::Button^  ResetB;
 			// AUp
 			// 
 			this->AUp->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"AUp.BackgroundImage")));
-			this->AUp->Location = System::Drawing::Point(199, 720);
+			this->AUp->Location = System::Drawing::Point(209, 720);
 			this->AUp->Name = L"AUp";
 			this->AUp->Size = System::Drawing::Size(60, 60);
 			this->AUp->TabIndex = 13;
@@ -1854,7 +1854,7 @@ private: System::Windows::Forms::Button^  ResetB;
 			// ADown
 			// 
 			this->ADown->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"ADown.BackgroundImage")));
-			this->ADown->Location = System::Drawing::Point(199, 853);
+			this->ADown->Location = System::Drawing::Point(209, 853);
 			this->ADown->Name = L"ADown";
 			this->ADown->Size = System::Drawing::Size(60, 60);
 			this->ADown->TabIndex = 14;
@@ -1864,7 +1864,7 @@ private: System::Windows::Forms::Button^  ResetB;
 			// ARight
 			// 
 			this->ARight->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"ARight.BackgroundImage")));
-			this->ARight->Location = System::Drawing::Point(258, 786);
+			this->ARight->Location = System::Drawing::Point(268, 786);
 			this->ARight->Name = L"ARight";
 			this->ARight->Size = System::Drawing::Size(60, 60);
 			this->ARight->TabIndex = 15;
