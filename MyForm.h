@@ -22,6 +22,12 @@ namespace LineupManager {
 			//TODO: Add the constructor code here
 			//
 		}
+	private: System::Windows::Forms::Button^  LCB;
+	private: System::Windows::Forms::Button^  RCB;
+
+	public:
+
+	public:
 		//used to hold current selected player
 		String^ selected;
 
@@ -240,6 +246,113 @@ namespace LineupManager {
 			}
 
 		}
+
+		//function that sets current selected players position to LCB
+		void Lcb()
+		{
+			if (selected == "BMendy")
+			{
+				BMendy->Location = Point(120, 520);
+			}
+			else if (selected == "IGundagon")
+			{
+				IGundagon->Location = Point(120, 520);
+			}
+			else if (selected == "JStones")
+			{
+				JStones->Location = Point(120, 520);
+			}
+			else if (selected == "SAguero")
+			{
+				SAguero->Location = Point(120, 520);
+			}
+			else if (selected == "ALaporte")
+			{
+				ALaporte->Location = Point(120, 520);
+			}
+			else if (selected == "LSane")
+			{
+				LSane->Location = Point(120, 520);
+			}
+			else if (selected == "NOtammendi")
+			{
+				NOtammendi->Location = Point(120, 520);
+			}
+			else if (selected == "Rsterling")
+			{
+				Rsterling->Location = Point(120, 520);
+			}
+			else if (selected == "DSilva")
+			{
+				DSilva->Location = Point(120, 520);
+			}
+			else if (selected == "KDebruyne")
+			{
+				KDebruyne->Location = Point(120, 520);
+			}
+			else if (selected == "Fernandinho")
+			{
+				Fernandinho->Location = Point(120, 520);
+			}
+			 if (selected == "Ederson")
+			{
+				Ederson->Location = Point(120, 520);
+			}
+		}
+
+		//function that sets current selected players position to RCB
+		void Rcb()
+		{
+			if (selected == "BMendy")
+			{
+				BMendy->Location = Point(300, 520);
+			}
+			else if (selected == "IGundagon")
+			{
+				IGundagon->Location = Point(120, 520);
+			}
+			else if (selected == "JStones")
+			{
+				JStones->Location = Point(120, 520);
+			}
+			else if (selected == "SAguero")
+			{
+				SAguero->Location = Point(120, 520);
+			}
+			else if (selected == "ALaporte")
+			{
+				ALaporte->Location = Point(120, 520);
+			}
+			else if (selected == "LSane")
+			{
+				LSane->Location = Point(120, 520);
+			}
+			else if (selected == "NOtammendi")
+			{
+				NOtammendi->Location = Point(120, 520);
+			}
+			else if (selected == "Rsterling")
+			{
+				Rsterling->Location = Point(120, 520);
+			}
+			else if (selected == "DSilva")
+			{
+				DSilva->Location = Point(120, 520);
+			}
+			else if (selected == "KDebruyne")
+			{
+				KDebruyne->Location = Point(120, 520);
+			}
+			else if (selected == "Fernandinho")
+			{
+				Fernandinho->Location = Point(120, 520);
+			}
+			if (selected == "Ederson")
+			{
+				Ederson->Location = Point(120, 520);
+			}
+		}
+
 	protected:
 		/// <summary>
 		/// Clean up any resources being used.
@@ -305,6 +418,8 @@ namespace LineupManager {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->IGundagon = (gcnew System::Windows::Forms::Button());
+			this->LCB = (gcnew System::Windows::Forms::Button());
+			this->RCB = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Field))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -499,11 +614,33 @@ namespace LineupManager {
 			this->IGundagon->UseVisualStyleBackColor = true;
 			this->IGundagon->Click += gcnew System::EventHandler(this, &MyForm::IGundagon_Click);
 			// 
+			// LCB
+			// 
+			this->LCB->Location = System::Drawing::Point(483, 314);
+			this->LCB->Name = L"LCB";
+			this->LCB->Size = System::Drawing::Size(43, 25);
+			this->LCB->TabIndex = 19;
+			this->LCB->Text = L"LCB";
+			this->LCB->UseVisualStyleBackColor = true;
+			this->LCB->Click += gcnew System::EventHandler(this, &MyForm::LCB_Click);
+			// 
+			// RCB
+			// 
+			this->RCB->Location = System::Drawing::Point(483, 345);
+			this->RCB->Name = L"RCB";
+			this->RCB->Size = System::Drawing::Size(43, 25);
+			this->RCB->TabIndex = 20;
+			this->RCB->Text = L"RCB";
+			this->RCB->UseVisualStyleBackColor = true;
+			this->RCB->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(731, 740);
+			this->Controls->Add(this->RCB);
+			this->Controls->Add(this->LCB);
 			this->Controls->Add(this->IGundagon);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
@@ -585,6 +722,12 @@ private: System::Void Ederson_Click(System::Object^  sender, System::EventArgs^ 
 }
 private: System::Void IGundagon_Click(System::Object^  sender, System::EventArgs^  e) {
 	selected = "IGundagon";
+}
+private: System::Void LCB_Click(System::Object^  sender, System::EventArgs^  e) {
+	Lcb();
+}
+private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
+	Rcb();
 }
 };
 }
