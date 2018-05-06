@@ -45,6 +45,7 @@
   <ItemGroup>
     <Image Include="..\..\..\..\Desktop\soccericon.ico" />
     <Image Include="..\..\..\..\Desktop\soccericon.png" />
+    <Image Include="..\images\soccericon.ico" />
     <Image Include="icon1.ico" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
