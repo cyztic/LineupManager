@@ -2189,6 +2189,7 @@ private: System::Windows::Forms::Button^  ResetB;
 			this->Controls->Add(this->JStones);
 			this->Controls->Add(this->BMendy);
 			this->Controls->Add(this->Field);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Field))->EndInit();
